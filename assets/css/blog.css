@@ -1,0 +1,170 @@
+
+@font-face {
+    font-family: 'Poppins';
+    src:  url(../fonts/poppins/Poppins-Light.ttf),
+    url(../fonts/poppins/Poppins-ExtraLightItalic.ttf);
+}
+
+@font-face{
+    font-family: 'Permanent Marker';
+    src: url(../fonts/permanent-marker/PermanentMarker-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #FFFFFF;
+}
+
+#blog {
+    padding: 88px 258px 89px 258px;
+    background: #252525;
+}
+
+.blog-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    margin-bottom: 52px;
+}
+
+.blog-grid {
+    background: #020202;
+    border-radius: 20px;
+    padding: 36px 31px 23px 31px;
+    text-align: center;
+}
+
+.blog-grid h1{
+    color: #FFB800;
+    font-family: 'Permanent Marker';
+    font-size: 24px;
+}
+
+.blog-grid p{
+    color: #FFFFFF;
+    font-family: 'Poppins';
+    font-size: 16px;
+    margin-top: 18px;
+    margin-bottom: 84px;
+    text-align: start;
+}
+
+.blog-grid a{
+    color: #FFB800;
+    font-family: 'Poppins';
+    font-size: 14px;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1920px){
+    #blog{
+        padding: 88px 308px 89px 308px;
+    }
+    
+    .blog-grid {
+        padding: 36px 44px 23px 44px;
+    }
+
+    .blog-grid p{
+        font-size: 22px;
+    }
+
+    .blog-grid h1{
+        font-size: 32px;
+    }
+
+    .blog-grid a{
+        font-size: 18px;
+    }
+
+    .blog-container {
+        gap: 65px;
+    }
+}
+
+
+@media only screen and (max-width: 1440px){
+    #blog{
+        padding: 88px 258px  89px 258px;
+    }
+
+    .blog-grid {
+        padding: 36px 31px 23px 31px;
+    }
+
+    .blog-grid p{
+        font-size: 16px;
+    }
+
+    .blog-grid h1{
+        font-size: 24px;
+    }
+
+    .blog-grid a{
+        font-size: 14px;
+    }
+
+    .blog-container {
+        gap: 50px;
+    }
+}
+
+@media only screen and (max-width: 1366px){
+    .blog-grid p {
+        font-size: 15px;
+        margin-bottom: 70px;
+    }
+
+    .blog-grid h1 {
+        font-size: 22px;
+    }
+
+    .blog-grid a {
+        font-size: 12px;
+    }
+
+    .blog-container {
+        gap: 40px;
+    }
+
+    .blog-grid {
+        padding: 36px 37px 23px 37px;
+    }
+}
+
+@media (max-width:1250px) {
+    #blog{
+        padding: 70px 160px 70px 160px;
+    }
+
+    .blog-container{
+        gap: 20px;
+    }
+
+    .blog-grid p {
+        font-size: 12px;
+    }
+
+    .blog-grid h1 {
+        font-size: 18px;
+    }
+
+    .blog-grid a {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 991px){
+    #blog {
+        padding: 60px 40px 60px 40px;
+    }
+
+    .blog-container{
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin-bottom: 25px;
+    }
+    
+}

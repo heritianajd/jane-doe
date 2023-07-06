@@ -1,0 +1,214 @@
+@font-face {
+    font-family: 'Poppins';
+    src:  url(../fonts/poppins/Poppins-Light.ttf),
+    url(../fonts/poppins/Poppins-ExtraLightItalic.ttf);
+}
+
+@font-face{
+    font-family: 'Permanent Marker';
+    src: url(../fonts/permanent-marker/PermanentMarker-Regular.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #FFFFFF;
+}
+
+#work{
+    background: #020202;
+    padding: 88px 258px 89px 258px;
+}
+
+.title-line{
+    display: flex;
+    justify-content: center;
+    gap: 27px;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.title-line h1{
+    font-family: 'Poppins';
+    font-size: 24px;
+}
+
+.title-line img{
+    width: 70px;
+    height: 3px;
+}
+
+.work-link {
+    gap: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.work-link a{
+    font-family: 'Poppins';
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.work-link a:hover{
+    text-decoration: underline#FFB800;
+}
+
+.work-grid {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 39px;
+    row-gap: 29px;
+}
+
+.work-grid img{
+    width: 100%;
+}
+
+.point-link{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.point-link a{
+    text-decoration: none;
+    font-style: normal;
+    font-size: 38px;
+}
+
+.point-link a:hover{
+    color: #FFB800;
+}
+
+.work-image-add{
+    position: relative;
+}
+
+.work-image-add button{
+    font-size: 65px;
+    color: #020202;
+    border: none;
+    background: none;
+}
+
+.work-button-add{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1920px){
+    #work {
+        padding: 115px 308px 115px 308px;
+    }
+
+    .title-line h1 {
+        font-size: 32px;
+    }
+
+    .work-link a {
+        font-size: 20px;
+    }
+
+    .point-link a{
+        font-size: 50px;
+    }
+
+    .work-image-add button{
+        font-size: 90px;
+    }
+
+    .work-grid{
+        column-gap: 56px;
+        row-gap: 42px;
+    }
+}
+
+
+
+@media (max-width: 1440px){
+    #work {
+        padding: 88px 258px 89px 258px;
+    }
+
+    .title-line h1 {
+        font-size: 24px;
+    }
+
+    .work-link a {
+        font-size: 16px;
+    }
+
+    .point-link a{
+        font-size: 38px;
+    }
+
+    .work-image-add button{
+        font-size: 65px;
+    }
+
+    .work-grid{
+        column-gap: 39px;
+        row-gap: 29px;
+    }
+}
+
+@media (max-width: 1366px){
+    .title-line h1 {
+        font-size: 20px;
+    }
+
+    .work-link a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:1250px) {
+    #work {
+        padding: 70px 188px 70px 188px;
+    }
+
+    .work-grid {
+        column-gap: 30px;
+        row-gap: 20px;
+    }
+}
+
+@media (max-width: 991px){
+    #work {
+        padding: 60px 40px 60px 40px;
+    }
+
+    .title-line h1 {
+        font-size: 20px;
+    }
+
+    .work-link a {
+        font-size: 11px;
+    }
+
+    .work-link {
+        gap: 8px;
+    }
+
+    .work-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .point-link a {
+        font-size: 25px;
+    }
+
+    .work-grid {
+        column-gap: 28px;
+        row-gap: 16px;
+    }
+}
+
