@@ -18,25 +18,22 @@
 
 #about{
     background-color: #252525;
-    padding: 78px 220px 98px 220px;
+    grid-template-columns: 50% 50%;
+    padding: 78px 220px 98px 188px;
     display: grid;
-    grid-template-columns: 42% 58%;
-    height: 634px;
+    height: 100%;
 }
 
-.about-image .backgroud-image{
-    background: rgba(196, 196, 196, 0.25);
-    width: 330px;
-    height: 420px;
-    border-radius: 20px;
-    transform: rotate(-7.17deg);
-    position: relative;
-    top: -422px;
+.about-image{
+    text-align: center;
 }
 
-.about-image .about-img-description{
-    width: 330px;
-    height: 420px;
+.about-image img{
+    width: 380px;
+}
+
+.about-text{
+    margin-top: 15px;
 }
 
 .about-title-line{
@@ -89,7 +86,6 @@
 
 @media (max-width: 1920px){
     #about{
-        height: 750px;
         padding: 112px 280px 98px;
     }
 
@@ -108,23 +104,11 @@
     .about-skills p{
         font-size: 22px;
     }
-
-    .about-image .about-img-description {
-        width: 410px;
-        height: 520px;
-    }
-
-    .about-image .backgroud-image{
-        width: 410px;
-        height: 520px;
-        top: -522px;
-    }
 }
 
 @media  (max-width: 1440px){
     #about{
-        height: 634px;
-        padding: 78px 220px 98px 220px;
+        padding: 78px 220px 98px 188px;
     }
 
     .about-title-line h1 {
@@ -142,17 +126,6 @@
     .about-skills p{
         font-size: 16px;
     }
-
-    .about-image .about-img-description {
-        width: 330px;
-        height: 420px;
-    }
-
-    .about-image .backgroud-image{
-        width: 330px;
-        height: 420px;
-        top: -422px;
-    }
 }
 
 @media (max-width: 1366px){
@@ -165,19 +138,7 @@
     }
 
     #about {
-        height: 600px;
-        padding: 78px 220px 98px 220px;
-    }
-
-    .about-image .about-img-description {
-        width: 310px;
-        height: 400px;
-    }
-
-    .about-image .backgroud-image{
-        width: 310px;
-        height: 400px;
-        top: -402px;
+        padding: 60px 150px 70px 100px;
     }
 
     .work-image-add button {
@@ -191,8 +152,37 @@
 
 @media (max-width:991px) {
     #about {
-        /* grid-template-columns: 100%; */
         padding: 40px 30px 45px 30px;
+        grid-template-columns: 1fr;
     }
 
+    .about-title-line h1 {
+        font-size: 15px;
+    }
+
+    .about-jane-doe h2 {
+        font-size: 26px;
+    }
+
+    .about-jane-doe p{
+        font-size: 12px;
+        margin-top: 8px;
+        margin-bottom: 10px;
+    }
+
+    .about-skills p {
+        font-size: 12px;
+    }
+
+    .about-skills {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about-skills em {
+        font-size: 26px;
+    }
+
+    .about-image img {
+        width: 200px;
+    }
 }
